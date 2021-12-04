@@ -108,7 +108,7 @@ padding-top:5px;</string>
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="clearAll">
+  <widget class="QPushButton" name="ClearAll">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -781,7 +781,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     </font>
    </property>
    <property name="text">
-    <string>233</string>
+    <string></string>
    </property>
    <property name="alignment">
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
