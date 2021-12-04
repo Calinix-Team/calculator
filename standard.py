@@ -125,9 +125,12 @@ class WelcomeScreen(QDialog):
         self.inputArea.setText(str(self.inputArea.text()) + "%")
     
     def Evaluate(self):
-        eqa = self.inputArea.text()
-        self.summaryArea.setText(eqa)
-        self.inputArea.setText(str(eval(eqa)))
+        try:
+            eqa = self.inputArea.text()
+            self.summaryArea.setText(eqa)
+            self.inputArea.setText(str(eval(eqa)))
+        except:
+            self.inputArea.setText("Invalid Expression")
 
     def clearAll(self):
         print(str(self.inputArea.text()))

@@ -780,8 +780,11 @@ border:1px solid rgba(211, 211, 211, 97)</string>
      <bold>false</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color:white</string>
+   </property>
    <property name="text">
-    <string></string>
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
