@@ -763,41 +763,31 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>.</string>
    </property>
   </widget>
-  <widget class="KLineEdit" name="OutputArea">
+  <widget class="QLineEdit" name="inputArea">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>140</y>
-     <width>501</width>
-     <height>161</height>
+     <y>130</y>
+     <width>491</width>
+     <height>171</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Segoe UI</family>
-     <pointsize>57</pointsize>
+     <pointsize>56</pointsize>
      <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">color:white;</string>
-   </property>
    <property name="text">
-    <string/>
+    <string>233</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>KLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>klineedit.h</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
