@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>StdDialog</class>
+ <widget class="QDialog" name="StdDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -25,13 +25,14 @@
     <normaloff>img/icon.ico</normaloff>img/icon.ico</iconset>
   </property>
   <property name="windowOpacity">
-   <double>2.000000000000000</double>
+   <double>0.950000000000000</double>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #2B2D2F;
-opacity:0.5;</string>
+opacity:0.5;
+filter:blur(38px);</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="heading">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -85,7 +86,7 @@ border-radius:2px;</string>
     </size>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="summaryArea">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -107,12 +108,12 @@ padding-top:5px;</string>
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_7">
+  <widget class="QPushButton" name="clearAll">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>210</x>
      <y>330</y>
-     <width>131</width>
+     <width>191</width>
      <height>61</height>
     </rect>
    </property>
@@ -133,7 +134,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>CE</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_24">
+  <widget class="QPushButton" name="add">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -159,38 +160,12 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>＋</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_25">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>330</y>
-     <width>121</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Segoe UI</family>
-     <pointsize>28</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color:rgb(28, 24, 24);
-color:white;
-border:1px solid rgba(211, 211, 211, 97)</string>
-   </property>
-   <property name="text">
-    <string>C</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_26">
+  <widget class="QPushButton" name="remainder">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>330</y>
-     <width>141</width>
+     <width>201</width>
      <height>61</height>
     </rect>
    </property>
@@ -211,7 +186,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>%</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_37">
+  <widget class="QPushButton" name="subtract">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -237,7 +212,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>－</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_38">
+  <widget class="QPushButton" name="multiply">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -263,7 +238,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>×</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_39">
+  <widget class="QPushButton" name="divide">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -289,7 +264,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>÷</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_40">
+  <widget class="QPushButton" name="equals">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -315,7 +290,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>＝</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_8">
+  <widget class="QPushButton" name="delete_2">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -335,7 +310,8 @@ border:1px solid rgba(211, 211, 211, 97)</string>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(28, 24, 24);
 color:white;
-border:1px solid rgba(211, 211, 211, 97)</string>
+border: 0.1px solid white;
+border-top: 1px solid gray;</string>
    </property>
    <property name="text">
     <string>⌫</string>
@@ -371,7 +347,7 @@ border-radius:2px;</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_42">
+  <widget class="QPushButton" name="num8">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -397,7 +373,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>8</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_43">
+  <widget class="QPushButton" name="num7">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -423,7 +399,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>7</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_44">
+  <widget class="QPushButton" name="num4">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -449,7 +425,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>4</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_45">
+  <widget class="QPushButton" name="num6">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -475,7 +451,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>6</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_46">
+  <widget class="QPushButton" name="num9">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -501,7 +477,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>9</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_47">
+  <widget class="QPushButton" name="num5">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -527,7 +503,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>5</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_48">
+  <widget class="QPushButton" name="num1">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -553,7 +529,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>1</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_49">
+  <widget class="QPushButton" name="num2">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -579,7 +555,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>2</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_50">
+  <widget class="QPushButton" name="num0">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -605,7 +581,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>0</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_51">
+  <widget class="QPushButton" name="num3">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -631,7 +607,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>3</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_27">
+  <widget class="QPushButton" name="root">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -657,7 +633,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>√</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_28">
+  <widget class="QPushButton" name="ptsOpen">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -683,7 +659,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>(</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_29">
+  <widget class="QPushButton" name="modulo">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -709,7 +685,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>mod</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_30">
+  <widget class="QPushButton" name="ptsClose">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -735,7 +711,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>)</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_31">
+  <widget class="QPushButton" name="pi">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -761,7 +737,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>π</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_52">
+  <widget class="QPushButton" name="period">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -800,6 +776,8 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <font>
      <family>Segoe UI</family>
      <pointsize>57</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
