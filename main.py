@@ -263,11 +263,15 @@ class Scientific(QDialog):
                ans=""
                self.inputArea.clear()
         if n=='del':
-                print(str(self.inputArea.text()))
-                self.inputArea.setText(self.inputArea.text()[:len(self.inputArea.text())-1])
+                # self.inputArea.setText(self.inputArea.text()[:len(self.inputArea.text())-1])
+                del list[-1]
+                self.inputArea.clear()
+                a=len(ans)
+                ans=ans[0:a-1]
+                self.inputArea.setText(str(ans))
 
         if n=='=':
-            
+             self.summaryArea.setText(self.inputArea.text())
              self.inputArea.clear()
              st="".join(list)
              try:
@@ -279,7 +283,6 @@ class Scientific(QDialog):
                 self.inputArea.setText(str(result))
              except (ValueError,SyntaxError,ZeroDivisionError):    #CATCHING INVALID FORMAT OR INVALID MATHEMATICS TERM
                   self.inputArea.clear()
-                  self.inputArea.setFont(font3)
                   self.inputArea.setText("Invalid Format")
 
         Scientific.flag=2
