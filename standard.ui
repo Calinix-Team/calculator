@@ -612,7 +612,7 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <rect>
      <x>10</x>
      <y>390</y>
-     <width>71</width>
+     <width>101</width>
      <height>71</height>
     </rect>
    </property>
@@ -636,9 +636,9 @@ border:1px solid rgba(211, 211, 211, 97)</string>
   <widget class="QPushButton" name="ptsOpen">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>210</x>
      <y>390</y>
-     <width>61</width>
+     <width>91</width>
      <height>71</height>
     </rect>
    </property>
@@ -659,38 +659,12 @@ border:1px solid rgba(211, 211, 211, 97)</string>
     <string>(</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="modulo">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>390</y>
-     <width>131</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Segoe UI</family>
-     <pointsize>28</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color:rgb(28, 24, 24);
-color:white;
-border:1px solid rgba(211, 211, 211, 97)</string>
-   </property>
-   <property name="text">
-    <string>mod</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="ptsClose">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>300</x>
      <y>390</y>
-     <width>61</width>
+     <width>91</width>
      <height>71</height>
     </rect>
    </property>
@@ -714,9 +688,9 @@ border:1px solid rgba(211, 211, 211, 97)</string>
   <widget class="QPushButton" name="pi">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>110</x>
      <y>390</y>
-     <width>71</width>
+     <width>101</width>
      <height>71</height>
     </rect>
    </property>

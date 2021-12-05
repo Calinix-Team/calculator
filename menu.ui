@@ -76,6 +76,8 @@ border-radius:2px;</string>
     <font>
      <family>Segoe UI Semibold</family>
      <pointsize>26</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -86,7 +88,7 @@ border-radius:2px;</string>
     <string>Calculator</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="std">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -99,6 +101,8 @@ border-radius:2px;</string>
     <font>
      <family>Segoe UI Semibold</family>
      <pointsize>20</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -116,7 +120,7 @@ border-radius:1px;</string>
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="sci">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -129,6 +133,8 @@ border-radius:1px;</string>
     <font>
      <family>Segoe UI Semibold</family>
      <pointsize>20</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -153,6 +159,8 @@ color:white;</string>
     <font>
      <family>Segoe UI Semibold</family>
      <pointsize>26</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -162,7 +170,7 @@ color:white;</string>
     <string>Converter</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="curr">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -175,6 +183,8 @@ color:white;</string>
     <font>
      <family>Segoe UI Semibold</family>
      <pointsize>20</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -186,7 +196,7 @@ color:white;</string>
     <string>Currency</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="volume">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -199,6 +209,8 @@ color:white;</string>
     <font>
      <family>Segoe UI Semibold</family>
      <pointsize>20</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
