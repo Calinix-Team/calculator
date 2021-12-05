@@ -35,6 +35,9 @@ class WelcomeScreen(QDialog):
         self.root.clicked.connect(self.SqrRoot)
         self.equals.clicked.connect(self.Evaluate)
 
+        self.menuBtn.clicked.connect(self.gotomenu)
+
+
 
 
 
@@ -136,6 +139,15 @@ class WelcomeScreen(QDialog):
         print(str(self.inputArea.text()))
         self.inputArea.setText(str(""))
     
+    def gotomenu(self):
+        menu = Menu()
+        widget.addWidget(menu)
+        widget.setCurrentIndex(widget.currentIndex() + 1)
+
+class Menu(QDialog):
+    def __init__(self):
+        super(Menu, self).__init__()
+        loadUi("menu.ui",self)
 
 
 app = QApplication(sys.argv)
