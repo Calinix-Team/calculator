@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QLineEdit
 from PyQt5.QtGui import QPixmap
 import math
 from PyQt5 import QtGui
-
+import keyboard as kb
 class Standard(QDialog):
     def __init__(self):
         super(Standard, self).__init__()
@@ -39,10 +39,29 @@ class Standard(QDialog):
         self.equals.clicked.connect(self.Evaluate)
         self.inputArea.editingFinished.connect(self.Evaluate)
         self.remainder.clicked.connect(self.insertMod)
-
-
+        self.history.clicked.connect(self.showhistory)
+        self.hist=[]
         self.menuBtn.clicked.connect(self.gotomenu)
-
+        kb.add_hotkey("1", self.insertNum1)
+        kb.add_hotkey("2", self.insertNum2)
+        kb.add_hotkey("3", self.insertNum3)
+        kb.add_hotkey("4", self.insertNum4)
+        kb.add_hotkey("5", self.insertNum5)
+        kb.add_hotkey("6", self.insertNum6)
+        kb.add_hotkey("7", self.insertNum7)
+        kb.add_hotkey("8", self.insertNum8)
+        kb.add_hotkey("9", self.insertNum9)
+        kb.add_hotkey("0", self.insertNum0)
+        kb.add_hotkey("Shift+8", self.insertMul)
+        kb.add_hotkey("Shift+=", self.insertAdd)
+        kb.add_hotkey("-", self.insertSub)
+        kb.add_hotkey("/", self.insertDi)
+        kb.add_hotkey("Shift+5", self.insertMod)
+        kb.add_hotkey("Enter", self.Evaluate)
+        kb.add_hotkey("Backspace", self.delLast)
+        kb.add_hotkey("Shift+9", self.addOpenPst)
+        kb.add_hotkey("Shift+0", self.addClosePst)
+        kb.add_hotkey(".", self.insertPer)
     def insertNum1(self):
         print(str(self.inputArea.text()))
         self.inputArea.setText(str(self.inputArea.text()) + "1")
@@ -127,7 +146,7 @@ class Standard(QDialog):
     
     def insertMod(self):
         print(str(self.inputArea.text()))
-        self.inputArea.setText(str(self.inputArea.text()) + "%")
+        self.inputArea.setText(str(self.inputArea.text()) + "*100")
     
     def Evaluate(self):
         try:
@@ -136,11 +155,13 @@ class Standard(QDialog):
                 eqa = eqa.replace("π", (f'({math.pi})'))
  
             print(eqa)
+            self.hist.append(eqa)
             self.summaryArea.setText(eqa)
             self.inputArea.setText(str(eval(eqa)))
         except:
             self.inputArea.setText("Invalid Expression")
-
+    def showhistory(self):
+        self.inputArea.setText(str(self.hist))
     def clearAll(self):
         print(str(self.inputArea.text()))
         self.inputArea.setText(str(""))
@@ -156,7 +177,17 @@ class Scientific(QDialog):
     def __init__(self):
         super(Scientific, self).__init__()
         loadUi("scientific.ui",self)
-
+        kb.add_hotkey("1", lambda: self.Signal('1'))
+        kb.add_hotkey("2", lambda: self.Signal('2'))
+        kb.add_hotkey("3", lambda: self.Signal('3'))
+        kb.add_hotkey("4", lambda: self.Signal('4'))
+        kb.add_hotkey("5", lambda: self.Signal('5'))
+        kb.add_hotkey("6", lambda: self.Signal('6'))
+        kb.add_hotkey("7", lambda: self.Signal('7'))
+        kb.add_hotkey("8", lambda: self.Signal('8'))
+        kb.add_hotkey("9", lambda: self.Signal('9'))
+        kb.add_hotkey("0", lambda: self.Signal('0'))
+        
         self.btn1.clicked.connect(lambda: self.Signal('C'))
 
         self.btn2.clicked.connect(lambda: self.Signal('7'))
